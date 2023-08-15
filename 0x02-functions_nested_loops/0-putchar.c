@@ -7,9 +7,9 @@
 
 #include "main.h"
 /**
- * main - Prints "_putchar" to a new line
+ * main - Prints "_putchar" followed by a new line.
  *
- * Return: return "0" to end the execution
+ * Return: Always 0.
  */
 int main(void)
 {
