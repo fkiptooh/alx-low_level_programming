@@ -1,9 +1,9 @@
 #include "main.h"
-/*
+/**
  * Main function
  * To print _putchar and a new line
  *
-*/
+ */
 int main(void){
 	_putchar('_');
 	_putchar('p');
