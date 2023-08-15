@@ -2,15 +2,16 @@
  * Putchar without the use of printf or put
  *
  * Created a main.h file that is being imported for use in our code
- *
  */
 
 #include "main.h"
+
 /**
- * main - Prints "_putchar" followed by a new line.
+ * main - Prints "putchar" followed by a new line.
  *
  * Return: Always 0.
  */
+
 int main(void)
 {
 	_putchar('_');
