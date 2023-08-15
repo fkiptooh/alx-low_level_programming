@@ -1,3 +1,10 @@
+/**
+ * Putchar without the use of printf or put
+ *
+ * Created a main.h file that is being imported for use in our code
+ *
+ */
+
 #include "main.h"
 /**
  * Main function
@@ -17,5 +24,5 @@ int main(void)
 	_putchar('r');
 	_putchar('\n');
 
-	return 0;
+	return (0);
 }
