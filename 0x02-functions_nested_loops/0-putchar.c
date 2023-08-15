@@ -7,10 +7,11 @@
 
 #include "main.h"
 /**
- * Main function
+ * main function
  *
  * To print _putchar and a new line
  *
+ * Return - return "0" to end the execution
  */
 int main(void)
 {
