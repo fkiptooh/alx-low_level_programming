@@ -1,7 +1,7 @@
-/**
- * Putchar without the use of printf or put
+/*
+ * File: 0-putchar.c
+ * Auth: Felix
  *
- * Created a main.h file that is being imported for use in our code
  */
 
 #include "main.h"
