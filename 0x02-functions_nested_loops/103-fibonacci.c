@@ -1,32 +1,33 @@
+/*
+ * File: 103-fibonacci.c
+ */
+
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - Prints the sum of even-valued Fibonacci sequence
+ *        terms not exceeding 4000000.
  *
- * Description: Prints the first 98 Fibonacci numbers
- *              in a specific format
- *
- * Return: Always 0 (Success)
+ * Return: Always 0.
  */
 int main(void)
 {
-    int count = 2;   /* Number of Fibonacci numbers to generate (excluding 1 and 2) */
-    int prev = 1;    /* Previous Fibonacci number */
-    int curr = 2;    /* Current Fibonacci number */
+	unsigned long fib1 = 0, fib2 = 1, fibsum;
+	float tot_sum;
 
-    printf("%d, %d", prev, curr); /* Print the first two Fibonacci numbers */
+	while (1)
+	{
+		fibsum = fib1 + fib2;
+		if (fibsum > 4000000)
+			break;
 
-    while (count < 98)
-    {
-        int next = prev + curr; /* Calculate the next Fibonacci number */
-        printf(", %d", next);
+		if ((fibsum % 2) == 0)
+			tot_sum += fibsum;
 
-        count++;
-        prev = curr;
-        curr = next;
-    }
+		fib1 = fib2;
+		fib2 = fibsum;
+	}
+	printf("%.0f\n", tot_sum);
 
-    printf("\n");
-
-    return 0;
+	return (0);
 }
